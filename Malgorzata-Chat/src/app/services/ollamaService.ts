@@ -1,5 +1,5 @@
 export class OllamaService {
-  private apiKey = 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; 
+  private apiKey = import.meta.env.VITE_GROQ_API_KEY; 
   private apiUrl = "https://api.groq.com/openai/v1/chat/completions";
 
   async checkStatus(): Promise<boolean> {
